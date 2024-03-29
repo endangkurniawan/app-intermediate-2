@@ -1,0 +1,62 @@
+.dream {
+  padding-top: 80px;
+  &__top {
+    text-align: center;
+    padding-bottom: 40px;
+    &__title {
+      font-size: 48px;
+      letter-spacing: 0.8px;
+    }
+    .btn {
+      display: inline-block;
+      vertical-align: middle;
+      text-decoration: none;
+      border: solid 1px;
+      padding: 12px 24px;
+      background-color: green;
+      border-radius: 96px;
+      color: white;
+      font-size: 18px;
+    }
+  }
+  // list item
+  &__list {
+    padding: 80px 0;
+    display: flex;
+    justify-content: space-between;
+    // align-items: stretch;
+  }
+  &__item {
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__box {
+    border-radius: 40px;
+    padding: 20px 20px 40px;
+    box-shadow: 0px 0px 32px 10px rgba(0, 0, 0, 0.2);
+  }
+  &__img {
+    transform: translateY(-80px);
+    &__el {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__txt {
+    &__title {
+      font-size: 36px;
+      line-height: 36px;
+      margin-bottom: 12px;
+    }
+    &__desc {
+      font-size: 14px;
+      margin: 0;
+    }
+  }
+}
