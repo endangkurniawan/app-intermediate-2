@@ -1,11 +1,14 @@
-import Footer from "components/Footer";
 import Header from "components/Header";
+import HeroBanner from "components/HeroBanner";
 import Join from "components/Join";
 import Swiper from "components/Swiper";
+import Footer from "components/Footer";
+
+import imgBanner from "assets/img/dummy/hero-banner.png";
 
 const Partner = () => {
   const data = {
-    title: "What drives you ?",
+    title: "What's your forte?",
     items: [
       {
         itemTitle: "Food delivery",
@@ -31,6 +34,7 @@ const Partner = () => {
   return (
     <>
       <Header />
+      <HeroBanner img={imgBanner} title="Expand the market and increase turnover without wasting your budget" desc="Reach more customers and get various conveniences by becoming a Gojek Business Partner" />
       <Swiper {...data} />
       <Join />
       <Footer />

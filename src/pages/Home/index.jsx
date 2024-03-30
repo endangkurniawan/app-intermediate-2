@@ -1,5 +1,5 @@
 import Header from "components/Header";
-// import HeroBanner from "components/HeroBanner";
+import HeroBanner from "components/HeroBanner";
 import Dream from "components/Dream";
 import Join from "components/Join";
 import Royalty from "components/Royalty/royalty";
@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <>
       <Header />
-      {/* <HeroBanner title="3 countries. 20+ products. 1 leading on-demand platform." source="https://youtu.be/VJH5FJ5kaJA?si=3rGZfd0o1nM6_R8M" /> */}
+      <HeroBanner video="https://www.youtube.com/embed/VJH5FJ5kaJA?enablejsapi=1&version=3&controls=0&rel=0&autoplay=1&loop=1&mute=1&playlist=VJH5FJ5kaJA&playsinline=1" title="3 negara. 20+ layanan. 1 platform on-demand terkemuka." />
       <Dream />
       <Royalty img={royaltyImg} title="Gojek Loyalty" desc="Make more transactions, get more rewards!" txtbtn="View more" />
       <Join />

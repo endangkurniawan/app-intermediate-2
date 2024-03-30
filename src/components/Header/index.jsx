@@ -29,7 +29,7 @@ const Header = () => {
       name: "Blog",
     },
     {
-      to: "#help",
+      to: "help",
       name: "Help",
     },
   ];

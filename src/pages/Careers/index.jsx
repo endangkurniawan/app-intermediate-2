@@ -4,10 +4,14 @@ import gocar from "assets/img/dummy/gocar.svg";
 import gosend from "assets/img/dummy/gosend.svg";
 import gobox from "assets/img/dummy/gobox.svg";
 
-import Footer from "components/Footer";
+// img banner
+import imgBanner2 from "assets/img/dummy/hero-banner-2.png";
+
 import Header from "components/Header";
-import Join from "components/Join";
+import HeroBanner from "components/HeroBanner";
 import Swiper from "components/Swiper";
+import Join from "components/Join";
+import Footer from "components/Footer";
 
 const Careers = () => {
   const data = {
@@ -42,6 +46,7 @@ const Careers = () => {
   return (
     <>
       <Header />
+      <HeroBanner img={imgBanner2} title="Be a trusted guardian who is ready to help solve problems" desc="Millions of Driver Partners have joined Gojek and increased their income, now it's your turn!" />
       <Swiper {...data} />
       <Join />
       <Footer />

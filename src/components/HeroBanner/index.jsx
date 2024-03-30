@@ -1,14 +1,27 @@
+import React from "react";
+
 const HeroBanner = (props) => {
+  const { img, video, title, desc } = props;
+
   return (
-    <div className="hero-banner">
-      <div className="hero-banner__video-box">
-        <video autoPlay muted loop>
-          <source src={props.source} type="video/mp4" />
-        </video>
-      </div>
-      <div className="hero-banner__content">
-        <h2 className="hero-banner__title">{props.title}</h2>
-        {props.desc !== undefined ? <p className="hero-banner__desc ">{props.desc}</p> : null}
+    <div className="banner">
+      {img && (
+        <div className="banner__background__img">
+          <img src={img} alt={title} className="banner__background__img__el" />
+        </div>
+      )}
+      {video && (
+        <div className="banner__video-foreground">
+          <iframe title="youtube background vidio" src={video} frameBorder="0"></iframe>
+        </div>
+      )}
+      <div className="container">
+        <div className="banner__wrapper">
+          <div className="banner__txt">
+            <h1 className="banner__title">{title}</h1>
+            {desc !== undefined ? <p className="banner__desc">{desc}</p> : null}
+          </div>
+        </div>
       </div>
     </div>
   );

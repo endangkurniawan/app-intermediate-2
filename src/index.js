@@ -11,6 +11,8 @@ import Partner from "./pages/Partner";
 import Careers from "./pages/Careers";
 import Company from "./pages/Company";
 import Products from "./pages/Products";
+import Blog from "pages/Blog";
+import Help from "pages/Help";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -29,6 +31,8 @@ root.render(
         <Route path="/careers" element={<Careers />}></Route>
         <Route path="/company" element={<Company />}></Route>
         <Route path="/products" element={<Products />}></Route>
+        <Route path="/blog" element={<Blog />}></Route>
+        <Route path="/help" element={<Help />}></Route>
       </Routes>
     </BrowserRouter>
   </StrictMode>
